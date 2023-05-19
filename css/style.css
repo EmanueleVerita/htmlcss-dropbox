@@ -21,14 +21,22 @@ HEADER
 
 */
 
+
+
 .header-nav-container{
+    width: 100%;
     padding: 15px 0;
-    background-color: white;
+    position: relative;
+    
 }
 
 nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
 }
 
 .col1-header{
@@ -66,7 +74,7 @@ header a{
 
 
 .header-container{
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     background-color: #B4D0E7;
     
@@ -118,13 +126,24 @@ MAIN
 */
 
 .business-plan-container{
-    max-width: 1200px;
+    width: 100%;
 }
 
 .title-business-plan{
     width: 70%;
     margin: 0 auto;
     padding-top: 100px;
+}
+
+.choose-billing{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.choose-billing span{
+    font-size: 0.8em;
+    color: darkgray;
 }
 
 .default-plan{
@@ -234,7 +253,7 @@ li{
 }
 
 .contacts-partner-container-main{
-    max-width: 1200px;
+    width: 100%;
 }
 
 .partner-dropbox-main{
@@ -270,7 +289,7 @@ li{
 }
 
 .info-operations-container-main{
-    max-width: 1200px;
+    width: 100%;
     margin: o auto;
 }
 
@@ -306,7 +325,7 @@ li{
 }
 
 .feedback-main-container{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -333,8 +352,40 @@ a .link-feedback{
     padding-bottom: 50px;
 }
 
+.companies-partners-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.companies-partners-container > *{
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4-square > *{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.image-companies{
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+.image-companies-big{
+    width: 100%;
+}
+
+
+
 .free-trial-main-container{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     background-color: #B4D0E7;
 }
@@ -360,7 +411,7 @@ a .link-feedback{
 }
 
 .FAQ-main-container{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -380,11 +431,15 @@ a .link-feedback{
 .single-FAQ{
     padding: 30px 0;
     border-top: 1px solid darkgray;
+    display: flex;
+    justify-content: space-between;
 }
 
 .last-FAQ{
     border-bottom: 1px solid darkgray;
 }
+
+
 
 
 /*
@@ -424,6 +479,19 @@ li .list-footer{
     color: white;
 }
 
+.margin-down{
+    margin-bottom: 1px solid darkgray;
+}
+
+.bottom-footer{
+    width:80%;
+    margin: 0 auto;
+}
+
+.language-container{
+    padding: 30px 0;
+    color: darkgray;
+}
 /*
 
 DEBUG
